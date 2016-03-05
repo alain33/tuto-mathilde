@@ -1,0 +1,84 @@
+plugin fonctionne avec des mots clés et des phrases qu'elle mémorise
+
+ne toucher à rien sauf  :
+
+si vous voulez utilisez un autre nom que SARAH : EVA , JARVIS...
+
+ligne 14 du cortana.js modifier sarah par jarvis, eva... ex 'Jarvis '
+n'oubliez pas l'espace apres le nom !!!!
+
+dans phraseclés/phrasesclés.json se trouve les phrases apprisent par MATHILDE
+vous pouvez le modifier si elle apprends des choses fausses
+
+
+
+PRINCIPE /////////////////////////////////////
+
+quand vous dites une phrase :
+
+vous : mathilde je veux que tu utilise va sur internet
+elle : Que recherche tu
+vous : va sur internet
+
+elle mémorise "va sur internet"
+
+elle recherche si c'est une phrase d'un xml
+si oui : elle active le plugin avec cette phrase
+et la prochaine fois que vous direz :
+
+mathilde je veux que tu utilise va sur internet
+elle activeras sans demander le plugin correspondant à : va sur internet
+
+si non : elle recherche dans ses bases de donnée ou sur internet la meilleur réponse
+
+si vous dites: mathilde va sur internet et qu'un xml correspond alors pas de question et elle active le plugin
+
+
+les mots clés suivant détecter dans une phrases active les plugins suivant :
+
+traduction :
+traduit de l'anglais au francais et vis versa
+ex : mathilde il faut vraimant que j'ai la TRADUCTION de quoi d'autre
+réponse : what else
+
+synonymes :
+donne les synonymes d'un mot
+mathilde peux tu .....LES SYNONYMES de partir
+et elle donne les synonymes
+
+videos :
+ouvre une page internet sur google video
+mathilde montre moi.............VIDEOS de la guerre des étoiles
+
+images :
+idem au videos mais avec images
+
+courses :
+hack du plugin courses
+
+permet de rajouter aux courses tout ce que vous voulez
+
+mathilde ajoute à  la liste des courses du papier tue mouche et de l'encre
+et elle rajoute malgré que le xml est vide
+mathilde enlève de la liste des courses du papier tue mouche et de l'encre
+idem
+
+memos
+permet d'écrire, lire ou effacer un mémo
+
+mathilde ...........MEMO....
+
+et laisser vous guidez
+
+lecture enfant:
+
+'mathilde apprend la lecture' enclenche un plug que apprends aux enfants à lire
+le texte est dans lectureenfnatmemoire/memoire.json
+
+
+le plugin infomathilde est basé sur un cron toutes les heures
+il vérifie les mots clés(info1memoires/info.json)
+modifier selon vos désirs
+le cron aussi dans infomathilde.prop
+
+
